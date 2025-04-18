@@ -35,9 +35,7 @@ const NewsSection = () => {
         <img src="/assets/2a.png" alt="Ep 3" className="episode-img" />
         <img src="/assets/2b.png" alt="Ep 4" className="episode-img" />
         <img src="/assets/2c.png" alt="Ep 3" className="episode-img" />
-        <img src="/assets/2d.png" alt="Ep 4" className="episode-img" />
-        <img src="/assets/2c.png" alt="Ep 3" className="episode-img" />
-        <img src="/assets/2d.png" alt="Ep 4" className="episode-img" />
+        <img src="/assets/2e.png" alt="Ep 1" className="episode-img" />
       </div>
     </Container>
   );

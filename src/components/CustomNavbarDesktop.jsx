@@ -9,7 +9,7 @@ const CustomNavbarDesktop = () => {
       style={{ width: "200px", minHeight: "100vh" }}
       bg="dark"
       variant="dark"
-      className="d-none d-lg-flex flex-column align-items-start p-3 navbar-lg-vertical navbar-lg-wide flex-shrink-0"
+      className="d-none d-lg-flex flex-column align-items-start p-3 navbar-lg-vertical navbar-lg-wide flex-shrink-0 pino"
     >
       <Navbar.Brand as={Link} to="/" className="fw-bold mb-4">
         <img src="./assets/apple.svg" alt="" />

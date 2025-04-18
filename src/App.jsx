@@ -5,6 +5,7 @@ import CustomNavbarMobile from "./components/CustomNavbarMobile";
 import Home from "./components/Home";
 import Playlist from "./components/Playlist";
 import "./style/App.css";
+import CustomFooter from "./components/CustomFooter";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
+      <CustomFooter />
     </BrowserRouter>
   );
 };
