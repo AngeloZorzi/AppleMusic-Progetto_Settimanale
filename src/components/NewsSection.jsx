@@ -3,7 +3,7 @@ import PlayerDesktop from "./PlaybarDesktop";
 
 const NewsSection = () => {
   return (
-    <Container fluid className="news-section text-white px-3 py-4">
+    <Container fluid className="news-section text-white px-3 pb-4 pt-0">
       <PlayerDesktop />
       <h2 className="fw-bold display-6 mb-4">Novità</h2>
 

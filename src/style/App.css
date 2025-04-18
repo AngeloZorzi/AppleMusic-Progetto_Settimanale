@@ -398,3 +398,43 @@ body {
   height: 24px;
   filter: brightness(0) invert(1);
 }
+
+.navbar-lg-vertical {
+  background-color: #121212 !important;
+  border-right: 1px solid #2a2a2a;
+}
+
+.musiclogo {
+  width: 120px;
+}
+
+.navbar-lg-vertical .nav-link {
+  color: #b3b3b3;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.navbar-lg-vertical .nav-link:hover,
+.navbar-lg-vertical .nav-link.active,
+.navbar-lg-vertical .nav-link:focus {
+  color: #ff3b30 !important;
+  background-color: #1e1e1e;
+}
+
+.navbar-lg-vertical .nav-link svg {
+  stroke-width: 1.5;
+}
+
+.navbar-lg-vertical .btn-outline-light {
+  border-color: #333;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.navbar-lg-vertical .btn-outline-light:hover {
+  background-color: #ff3b30;
+  border-color: #ff3b30;
+  color: #fff;
+}
