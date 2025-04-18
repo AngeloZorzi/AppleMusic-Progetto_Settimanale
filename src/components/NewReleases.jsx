@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleFavorite } from "../redux/favoriteSlice";
+import { setCurrentSong } from "../redux/playerSlice"; // ✅
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -20,6 +21,10 @@ const NewReleases = () => {
     dispatch(toggleFavorite({ id: song.id, ...song }));
   };
 
+  const handleSelectSong = (song) => {
+    dispatch(setCurrentSong(song));
+  };
+
   const isFavorite = (songId) => favorites.find((song) => song.id === songId);
 
   return (
@@ -30,7 +35,11 @@ const NewReleases = () => {
       <Row className="gx-3 gy-4">
         {songs.slice(0, 12).map((song) => (
           <Col key={song.id} xs={6} sm={4} md={3} lg={2}>
-            <div className="release-card position-relative">
+            <div
+              className="release-card position-relative"
+              onClick={() => handleSelectSong(song)}
+              style={{ cursor: "pointer" }}
+            >
               <img
                 src={song.album.cover_medium}
                 alt={song.title}
@@ -42,7 +51,10 @@ const NewReleases = () => {
               </div>
               <button
                 className="favorite-btn position-absolute"
-                onClick={() => handleToggleFavorite(song)}
+                onClick={(e) => {
+                  e.stopPropagation(); // ✅ blocca click della card
+                  handleToggleFavorite(song);
+                }}
               >
                 {isFavorite(song.id) ? (
                   <AiFillHeart className="text-danger" />

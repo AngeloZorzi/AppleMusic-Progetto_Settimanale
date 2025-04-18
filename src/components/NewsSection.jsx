@@ -1,8 +1,10 @@
 import { Container } from "react-bootstrap";
+import PlayerDesktop from "./PlaybarDesktop";
 
 const NewsSection = () => {
   return (
     <Container fluid className="news-section text-white px-3 py-4">
+      <PlayerDesktop />
       <h2 className="fw-bold display-6 mb-4">Novità</h2>
 
       <div className="news-card-row mb-5">

@@ -12,8 +12,7 @@ const CustomNavbarDesktop = () => {
       className="d-none d-lg-flex flex-column align-items-start p-3 navbar-lg-vertical navbar-lg-wide flex-shrink-0 pino"
     >
       <Navbar.Brand as={Link} to="/" className="fw-bold mb-4">
-        <img src="./assets/apple.svg" alt="" />
-        Music
+        <img src="./assets/music.svg" alt="" />
       </Navbar.Brand>
 
       <Form className="d-flex mb-4 w-100">

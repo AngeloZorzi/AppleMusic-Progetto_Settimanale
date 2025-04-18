@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import Playlist from "./components/Playlist";
 import "./style/App.css";
 import CustomFooter from "./components/CustomFooter";
+import PlayerDesktop from "./components/PlaybarDesktop";
+import PlayerMobile from "./components/PlaybarMobile";
 
 const App = () => {
   return (
@@ -14,7 +16,7 @@ const App = () => {
         {/* Navbar Desktop */}
         <CustomNavbarDesktop />
         {/* Navbar Mobile */}
-        <CustomNavbarMobile />
+        {/* <CustomNavbarMobile /> */}
 
         {/* Contenuto */}
         <div className="flex-grow-1">
@@ -24,6 +26,8 @@ const App = () => {
           </Routes>
         </div>
       </div>
+
+      <PlayerMobile />
       <CustomFooter />
     </BrowserRouter>
   );
